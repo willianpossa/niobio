@@ -7,7 +7,7 @@ $(function(){
         method: "GET",
         sortIndx: ["empresa", "produto"],
         //sortDir: ["up", "down"],
-        url:"api.php",
+        url:"http://wwwfsocietycursos.pe.hu/api.php",
         getData: function (dataJSON) {
             return { curPage: dataJSON.curPage, totalRecords: dataJSON.totalRecords, data: dataJSON.data };
         }
