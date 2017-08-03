@@ -118,7 +118,11 @@ $(function(){
 
 
     var colM = [
-        {dataIndx: "empresa",title:"Empresa", minWidth:120, dataType:"string", align: 'left', editable: true},
+        {
+            dataIndx: "empresa",title:"Empresa", minWidth:120, dataType:"string", align: 'left', editable: true,
+            filter: { type: 'textbox', condition: 'begin', listeners: ['keyup'], style: 'width: 90px;' }
+        
+        },
         {dataIndx: "produto",title:"Produto", minWidth:120, dataType:"string"},
         {dataIndx: "quantidade",title:"Quantidade (kg/Unid.)", width:170, dataType:"integer", align:"left"},
         {dataIndx: "vVarejo",title:"Varejo", width:80, dataType:"float", align:"left", format: '$##,###.00'},
