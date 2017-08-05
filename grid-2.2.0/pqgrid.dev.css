@@ -18,7 +18,8 @@ div.pq-grid *{
     line-height:normal;	
 }
 div.pq-grid *:focus{
-    outline:1px dotted gray;
+    border-color: #54ABD9;
+    outline: 0;
 }
 div.pq-grid-top{
     border-width:0px;
@@ -80,10 +81,11 @@ div.pq-toolbar .pq-separator
 }    
 .pq-grid .pq-search-txt
 {
-    border:1px solid #ccc;
-    overflow:visible;
-    margin:1px auto 1px;
-    padding:1px 4px;        
+    width: 75px;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 6px 12px;
+    box-shadow: none;      
 }
 .pq-grid-dialog *
 {
